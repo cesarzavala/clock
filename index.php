@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="<?php echo dayPart() ?>">
-	<h1 class="<?php echo dayPart() ?>">Beautiful</h1>
+	<h1 class="<?php echo dayPart() ?>">Beautiful <?php echo dayPart() ?></h1>
 	<img src="<?php echo $image ?>" alt="Background" >
 </body>
 </html>
