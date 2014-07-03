@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <?php
 
 	error_reporting(E_ALL);
@@ -11,6 +11,8 @@
 	$imageAfternoon = "php-afternoon.png";
  	$imageEvening = "php-evening.png";
 	$imageNight = "php-night.png"; 
+
+
 
 
 	if (($hour>=5) and ($hour<11)) {
@@ -27,19 +29,15 @@
 		$class = "night";
 	}
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Clock - Cesar Zavala</title>
-	<style>
-		.morning {background-color: #865f86; }
-		.afternoon {background-color: #2c87c8; }
-		.evening {background-color: #c7b02f; }
-		.night {background-color: #180629; }
-	</style>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="<?php echo $class ?>">
-	<h1>Clock exercise</h1>
-	<h2><?php echo $hour ?></h2>
+	<h1 class="<?php echo $class ?>">Beautiful</h1>
 	<img src="<?php echo $imagePath . $image ?>" alt="Background" >
 </body>
 </html>
